@@ -38,3 +38,28 @@ logging in process:
 - front stores this JWT
 - front includes JWT whenever it nees privileges access
 - server uses the JWT signature to verify that it hasn't been modified (if user modifies id in the token, token will be invalid, because user doesn't know the secret key to encrypt signature of token)
+
+---
+
+## {Authorization 'Bearer yJzdiOil...}
+
+## JWT are crednetials. Be careful with them
+
+Signing vs encrypting
+Signing - proves that the data in the JWT han't been modified
+Encrypting - prevents third parties from seein the data inside the JWT
+
+---
+
+Benefits:
+
+- stateless - doesn't require backend to actively keep track of who is logged in (mark user as logged in on server)
+
+- more compact and secure than XML
+
+Drawbacks:
+
+- tokens are valid until they expire or until the private key on server is changed. If the user is hacked, changing password will not help.
+  Browser doesHard to block specific users. Logging out is deleting token from browser
+
+- the user will have to reauthenticate when the token expires
