@@ -15,7 +15,7 @@ export const SignUpPage = () => {
 
 	const onSignUpClicked = async () => {
 		const response = await axios.post('/api/signup', {
-			emai: emailValue,
+			email: emailValue,
 			password: passwordValue,
 		});
 		const {token} = response.data;
