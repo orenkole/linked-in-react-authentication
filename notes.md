@@ -63,3 +63,11 @@ Drawbacks:
   Browser doesHard to block specific users. Logging out is deleting token from browser
 
 - the user will have to reauthenticate when the token expires
+
+## Adding sign-up route to the server
+
+`npm i bcrypt dotenv jsonwebtoken`
+
+## Genereting JSON web tokens
+
+`-r dotenv/config` - load environment variables when server starts up
