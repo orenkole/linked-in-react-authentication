@@ -83,3 +83,8 @@ Drawbacks:
 5. If the user really owns email, they can click this link, which sends the to a special landing page in our application
 6. The landing page parses the verification hash form the URL and sends it to the server
 7. If the verification hash matches, the user is marked as "verified"
+
+## Setting up an email provider
+
+https://sendgrid.com/
+https://app.sendgrid.com/guide/integrate/langs/nodejs
