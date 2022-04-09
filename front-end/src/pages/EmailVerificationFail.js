@@ -1,6 +1,6 @@
 import {useHistory} from "react-router-dom";
 
-export const EmailVerificationSuccess = () => {
+export const EmailVerifictionFail = () => {
 	const history = useHistory();
 
 	return (

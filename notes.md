@@ -88,3 +88,12 @@ Drawbacks:
 
 https://sendgrid.com/
 https://app.sendgrid.com/guide/integrate/langs/nodejs
+
+# 3. Resetting password
+
+1. The user clicks "forgot password" which takes them to another page
+2. The suer enters their email into this page, which sends it to the server
+3. I an account with tha email exists, the server generates a verification hash and sends a link to that email address
+4. When the user clicks the link, ther're taken to a landing page where they can enter a new password
+5. The new passwod is sent to the serve which checks to make sure the verification hash mathches
+6. If it matches, the user's password is updated and they can log in with their new password

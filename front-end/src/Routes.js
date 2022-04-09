@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { PrivateRoute } from './auth/PrivateRoute';
-import { EmailVerificationLandingPage } from './pages/emailVerificationLandingPage';
+import { EmailVerificationLandingPage } from './pages/EmailVerificationLandingPage';
 import { LogInPage } from './pages/LoginPage';
 import { SignUpPage } from './pages/SignUpPage';
 import { UserInfoPage } from './pages/UserInfoPage';
