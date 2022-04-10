@@ -97,3 +97,11 @@ https://app.sendgrid.com/guide/integrate/langs/nodejs
 4. When the user clicks the link, ther're taken to a landing page where they can enter a new password
 5. The new passwod is sent to the serve which checks to make sure the verification hash mathches
 6. If it matches, the user's password is updated and they can log in with their new password
+
+# 4. OAuth
+
+1. Generate a special URL for the service-provider's site
+2. Send the user to this URL when thay click "Login in with \_\_\_\_"
+3. If the user grants us permission, the service provider will redirect them back to our site with a special code
+4. Our site uses thi code to load the user's info
+5. We create or update the user's account with the provider's info
