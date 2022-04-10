@@ -115,3 +115,7 @@ https://console.cloud.google.com/home/dashboard?project=ts-grider&hl=ru&pli=1
 new project => api and services => oauth concent screen => externa, create => fill in dev info => add or remove scopes => 2 upper opitons, update => save and continue => test users, add users
 
 credentials => create credentials, OAuth client id => web application => add URI, URI: http://localhost:8080, Authorized redirect URIs: http://localhost:8080/auth/google/callback, create => copy credentials
+
+## Adding an OAuth URL route
+
+`npm i googleapis`
