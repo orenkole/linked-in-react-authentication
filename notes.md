@@ -100,8 +100,18 @@ https://app.sendgrid.com/guide/integrate/langs/nodejs
 
 # 4. OAuth
 
+## OAuth basics
+
 1. Generate a special URL for the service-provider's site
 2. Send the user to this URL when thay click "Login in with \_\_\_\_"
 3. If the user grants us permission, the service provider will redirect them back to our site with a special code
 4. Our site uses thi code to load the user's info
 5. We create or update the user's account with the provider's info
+
+## Setting up OAuth on google
+
+https://console.cloud.google.com/home/dashboard?project=ts-grider&hl=ru&pli=1
+
+new project => api and services => oauth concent screen => externa, create => fill in dev info => add or remove scopes => 2 upper opitons, update => save and continue => test users, add users
+
+credentials => create credentials, OAuth client id => web application => add URI, URI: http://localhost:8080, Authorized redirect URIs: http://localhost:8080/auth/google/callback, create => copy credentials
